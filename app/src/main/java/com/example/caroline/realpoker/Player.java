@@ -1,6 +1,5 @@
 package com.example.caroline.realpoker;
 
-import java.lang.reflect.Array;
 
 /**
  * Created by maylisw on 11/11/17.
@@ -10,9 +9,9 @@ public class Player {
     //Player (Name, Monnies, hand (ARRAY))
     private String name;
     private int monnies;
-    private Array hand;
+    private String[] hand;
 
-    public Player(String name, int monnies, Array hand) {
+    public Player(String name, int monnies, String[] hand) {
         this.name = name;
         this.monnies = monnies;
         this.hand = hand;
@@ -26,7 +25,7 @@ public class Player {
         return monnies;
     }
 
-    public Array getHand() {
+    public String[] getHand() {
         return hand;
     }
 
@@ -38,7 +37,7 @@ public class Player {
         this.monnies = monnies;
     }
 
-    public void setHand(Array hand) {
+    public void setHand(String[] hand) {
         this.hand = hand;
     }
 }
